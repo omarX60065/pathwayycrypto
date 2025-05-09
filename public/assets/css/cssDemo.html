@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Styled Page with Indigo Theme</title>
+  <style>
+    :root {
+      --primary-color: #3a1d5c;
+      --accent-blue: #1e90ff;
+      --accent-pink: #ff4dd2;
+      --accent-gold: #f5c518;
+      --neutral-light: #dcd6f7;
+      --neutral-bg: #f1f1f1;
+      --text-dark: #121212;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--neutral-bg);
+      color: var(--text-dark);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      background-color: var(--accent-blue);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: var(--accent-pink);
+    }
+
+    .highlight {
+      color: var(--accent-gold);
+      font-weight: bold;
+    }
+
+    .card {
+      background-color: var(--neutral-light);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 15px 0;
+    }
+
+    .card h2 {
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      line-height: 1.6;
+    }
+  </style>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  
+<style>
+    .fa-users:before {
+      content: "\f0c0";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+  </style>
+  <style>
+
+@font-face {
+      font-family: 'flaticon';
+      src: url('Flaticon.woff2') format('woff2'),
+           url('Flaticon.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    [class^="flaticon-"]:before,
+    [class*=" flaticon-"]:before {
+      font-family: 'flaticon';
+      font-style: normal;
+      font-weight: normal;
+      display: inline-block;
+    }
+
+    .flaticon-handshake:before {
+      content: "\f103";
+      font-size: 48px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Welcome to My Indigo Themed Page</h1>
+    <p>Elegant and colorful design powered by <span class="highlight">custom CSS</span>.</p>
+    <button class="button">Get Started</button>
+  </div>
+
+  <div class="card">
+    <h2>Section One</h2>
+    <p>This is a content block with a soft lavender background. Use this to showcase information, articles, or features.</p>
+  </div>
+
+  <div class="card">
+    <h2>Section Two</h2>
+    <p>Mix and match your color palette for maximum visual impact. Try using <span class="highlight">accent colors</span> to draw attention to key elements.</p>
+  </div>
+
+  <i class="fa-users"></i>
+
+  <i class="flaticon-handshake"></i>
+
+</body>
+</html>
